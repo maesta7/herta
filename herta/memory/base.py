@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
-from typing_extensions import Literal
 from herta.inputs import System_msg, Human_msg, AI_msg
-from typing import Literal, Union
+from typing import Union
 
 class BaseChatMemory(ABC):
 
