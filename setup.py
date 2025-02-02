@@ -10,8 +10,8 @@ setup(
     author='Pon Pongwachirin',
     author_email='tar.workspace@gmail.com',
     description='Core LLM Package',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+    #long_description=open('README.md').read(),
+    #long_description_content_type='text/markdown',
     url='https://github.com/maesta7/herta',
     classifiers=[
         'Programming Language :: Python :: 3',
