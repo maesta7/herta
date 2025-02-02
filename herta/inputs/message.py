@@ -31,15 +31,15 @@ class FunctionCall(ToolCall):
 # =================================================================
 
 class System_msg(BaseMsg):
-    role: str = Literal["system"]
+    role: str = "system"
 
 class AI_msg(BaseMsg):
-    role: str = Literal["assistant"]
+    role: str = "assistant"
     tool_calls: Optional[list[FunctionCall]] = None
 
 class Human_msg(BaseMsg):
-    role: str = Literal["user"]
+    role: str = "user"
 
 class Tool_msg(BaseMsg):
-    role: str = Literal["tool"]
+    role: str = "tool"
     tool_call_id: str
