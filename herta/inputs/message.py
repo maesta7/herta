@@ -5,13 +5,10 @@ from typing import Literal, Union, Optional
 # Base class for Message objects
 # =================================================================
 
-class BaseContent(BaseModel):
-    content: Union[str, list[dict]]
-
 class BaseMsg(BaseModel):
     role: str
     name: Optional[str] = None
-    content: BaseContent
+    content: Union[str, list[dict]]
 
 # =================================================================
 # Tool Calling Class

@@ -14,5 +14,5 @@ class BaseLLM(ABC):
         pass
 
     @abstractmethod
-    def _get_tools_schema(self, *args: any, **kwargs):
+    def __get_tools_schema(self, *args: any, **kwargs):
         pass
