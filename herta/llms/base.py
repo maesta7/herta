@@ -12,7 +12,3 @@ class BaseLLM(ABC):
     @abstractmethod
     async def stream(self, *args: any, **kwargs: any) -> AsyncIterator[str]:
         pass
-
-    @abstractmethod
-    def __get_tools_schema(self, *args: any, **kwargs):
-        pass
